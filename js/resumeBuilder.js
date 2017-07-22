@@ -9,8 +9,8 @@ console.log(firstname); */
 $("#main").append(awesomeThougs);
 console.log(awesomeThougs); */
 
-/* usando replace
+/*  usando replace  */
 var email = "andreiricardorodrigues@email.com";
 var newemail = email.replace("email","gmail");
 console.log("email errado\n ",email,"\n email correto \n", newemail);
- */
+$("#main").append("email errado\n <br>",email,"<br>\n email correto \n<br>", newemail);
