@@ -15,7 +15,10 @@ var newemail = email.replace("email","gmail");
 console.log("email errado\n ",email,"\n email correto \n", newemail);
 $("#main").append("email errado\n <br>",email,"<br>\n email correto \n<br>", newemail); */
 
-var sTring = "Sou o Andrei e me sinto fantastico!";
+/* var sTring = "Sou o Andrei e me sinto fantastico!";
 var newsTring = sTring.replace("fantastico","engracado");
 console.log("primeiro texto\n",sTring,"\n Segundo texto\n",newsTring);
-$("#main").append("primeiro texto\n<br>",sTring,"<br>\n Segundo texto\n<br>",newsTring);
+$("#main").append("primeiro texto\n<br>",sTring,"<br>\n Segundo texto\n<br>",newsTring); */
+
+var formatarnome = HTMLheaderName.replace("%data%", "Andrei Ricardo Rodrigues");
+$("#header").append(formatarnome);
