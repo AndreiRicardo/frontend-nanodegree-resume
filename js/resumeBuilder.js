@@ -20,5 +20,23 @@ var newsTring = sTring.replace("fantastico","engracado");
 console.log("primeiro texto\n",sTring,"\n Segundo texto\n",newsTring);
 $("#main").append("primeiro texto\n<br>",sTring,"<br>\n Segundo texto\n<br>",newsTring); */
 
-var formatarnome = HTMLheaderName.replace("%data%", "Andrei Ricardo Rodrigues");
-$("#header").append(formatarnome);
+/* var formatarnome = HTMLheaderName.replace("%data%", "Andrei Ricardo Rodrigues");
+$("#header").append(formatarnome); */
+
+/* 
+quiz 6
+var s = "audacity";
+
+var udacityizer = function(s) {  
+// Right now, the variable s === "audacity"
+// Manipulate s to make it equal to "Udacity"
+// Your code goes here!
+var s = s.replace("audacity","Udacity");
+
+
+return s;
+};
+
+// Did your code work? The line below will tell you!
+console.log(udacityizer(s)); */
+
