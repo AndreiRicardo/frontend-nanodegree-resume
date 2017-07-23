@@ -131,6 +131,9 @@ var fruits = ['Apple', 'Banana'];
   console.log(item,"=\t ", index);
 }); */
 
+
+/* 
+////ele diz que não quer isso mas funciona
 var sampleArray = [0,0,7];
 
 var incrementLastArrayElement = function(_array) {
@@ -145,9 +148,11 @@ var incrementLastArrayElement = function(_array) {
     
     // Your code goes in here!
     
+   
+
     newArray = sampleArray;
     //newArray.slice(sampleArray);
-    sampleArray = newArray.push(3,2,1);
+    sampleArray.length = newArray.push(3,2,1);
      
    
 
@@ -159,3 +164,21 @@ var incrementLastArrayElement = function(_array) {
 
 // Did your code work? The line below will tell you!
 console.log(incrementLastArrayElement(sampleArray));
+
+ */
+
+/* 
+ ////ele diz que quer isso
+
+ var sampleArray = [0,0,7];// carrenagdo uma array
+
+ function incrementLastArrayElement(_array)  {// usando _array para passar sampleArray
+    var newArray = []; // carregando uma array vazia
+    newArray = _array.slice(0); // copiando sampleArray para dentro da newArray
+    var lastNumber = newArray.pop(); // removendo o ultimo item da lista
+    newArray.push(lastNumber + 1); // pegando o ultimo item que estava sendo removido e adiciona mais no valor
+    return newArray; // devolve a lista
+}
+
+console.log(incrementLastArrayElement(sampleArray));// trazendo a função para o console. _array = sampleArray
+ */
