@@ -47,50 +47,49 @@ $("#main").append(skills.length); */
 
 //essas linhas estão no mdn 
 
-//Create an Array
+//////Create an Array
 
 var fruits = ['Apple', 'Banana'];
 
 //console.log(fruits.length);
 // 2
 
-//Access (index into) an Array item
+//////Access (index into) an Array item
 
  //var first = fruits[0];
 // Apple
 
-var last = fruits[fruits.length - 1];
+//var last = fruits[fruits.length - 1];
 // Banana
 
-//Loop over an Array
+//////Loop over an Array
 
-fruits.forEach(function(item, index, array) {
-  console.log(item, index);
-});
+//fruits.forEach(function(item, index, array) {
+  console.log(item, "= \t", index);
+//});
 // Apple 0
 // Banana 1
 
-//Add to the end of an Array
-
-//var newLength = fruits.push('Orange');
+//////Add to the end of an Array
+var newLength = fruits.push('Orange');
 // ["Apple", "Banana", "Orange"]
 
-//Remove from the end of an Array
+//////Remove from the end of an Array
 
 //var last = fruits.pop(); // remove Orange (from the end)
 // ["Apple", "Banana"];
 
-//Remove from the front of an Array
+//////Remove from the front of an Array
 
 //var first = fruits.shift(); // remove Apple from the front
 // ["Banana"];
 
-//Add to the front of an Array
+//////Add to the front of an Array
 
 //var newLength = fruits.unshift('Strawberry') // add to the front
 // ["Strawberry", "Banana"];
 
-//Find the index of an item in the Array
+//////Find the index of an item in the Array
 
 //fruits.push('Mango');
 // ["Strawberry", "Banana", "Mango"]
@@ -98,13 +97,13 @@ fruits.forEach(function(item, index, array) {
 //var pos = fruits.indexOf('Banana');
 // 1
 
-//Remove an item by index position
+//////Remove an item by index position
 
 //var removedItem = fruits.splice(pos, 1); // this is how to remove an item
                                         
 // ["Strawberry", "Mango"]
 
-//Remove items from an index position
+//////Remove items from an index position
 
 //var vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot'];
 //console.log(vegetables); 
@@ -122,7 +121,12 @@ fruits.forEach(function(item, index, array) {
 //console.log(removedItems); 
 // ["Turnip", "Radish"]
 
-//Copy an Array
+//////Copy an Array
 
 //var shallowCopy = fruits.slice(); // this is how to make a copy
 // ["Strawberry"] 
+
+//saidas globais
+newLength.forEach(function(item, index, array) {
+  console.log(item,index);
+});
