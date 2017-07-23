@@ -40,3 +40,7 @@ return s;
 // Did your code work? The line below will tell you!
 console.log(udacityizer(s)); */
 
+var skills =[
+    "awesome", "programing", "teaching", "JS"
+];
+$("#main").append(skills.length);
