@@ -65,13 +65,13 @@ var fruits = ['Apple', 'Banana'];
 //////Loop over an Array
 
 //fruits.forEach(function(item, index, array) {
-  console.log(item, "= \t", index);
+  //console.log(item, "= \t", index);
 //});
 // Apple 0
 // Banana 1
 
 //////Add to the end of an Array
-var newLength = fruits.push('Orange');
+//var newLength = fruits.push('Orange');
 // ["Apple", "Banana", "Orange"]
 
 //////Remove from the end of an Array
@@ -86,7 +86,7 @@ var newLength = fruits.push('Orange');
 
 //////Add to the front of an Array
 
-//var newLength = fruits.unshift('Strawberry') // add to the front
+///var newLength = fruits.unshift('Strawberry') // add to the front
 // ["Strawberry", "Banana"];
 
 //////Find the index of an item in the Array
@@ -127,6 +127,35 @@ var newLength = fruits.push('Orange');
 // ["Strawberry"] 
 
 //saidas globais
-newLength.forEach(function(item, index, array) {
-  console.log(item,index);
-});
+/* fruits.forEach(function(item, index, array) {
+  console.log(item,"=\t ", index);
+}); */
+
+var sampleArray = [0,0,7];
+
+var incrementLastArrayElement = function(_array) {
+    var newArray = [];
+    // Your code should make newArray equal to an array that has the same
+    // values as _array, but the last number has increased by one.
+    
+    // For example:
+    // _array = [1, 2, 3];
+    // turns into:
+    // newArray = [1, 2, 4];
+    
+    // Your code goes in here!
+    
+    newArray = sampleArray;
+    //newArray.slice(sampleArray);
+    sampleArray = newArray.push(3,2,1);
+     
+   
+
+    
+    
+    // Don't delete this line!
+    return newArray;
+};
+
+// Did your code work? The line below will tell you!
+console.log(incrementLastArrayElement(sampleArray));
