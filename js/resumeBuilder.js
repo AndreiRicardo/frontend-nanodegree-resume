@@ -255,4 +255,19 @@ será separado pelo chars opcional. Nesse caso, queremos um espaço entre os doi
 fizemos de chars um único espaço, " ". Com isso, reunimos "Albert" e "Einstein" para formar "Albert EINSTEIN"!
  */
 
- 
+ /////////////////////////////manipulando objetos literais
+/* 
+ var skills = ["awesome", "programing", "teaching", "JS"];
+ var bio = {
+     "nome" : "Andrei",
+     "idade" : 35,
+     "Skills": skills
+
+ };
+   
+    $('#main').append(
+        "nome: \t", bio.nome,
+        "<br>idade: \t", bio.idade,
+    ); */
+
+    
