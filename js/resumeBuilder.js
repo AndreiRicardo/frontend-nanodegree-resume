@@ -182,3 +182,77 @@ console.log(incrementLastArrayElement(sampleArray));
 
 console.log(incrementLastArrayElement(sampleArray));// trazendo a função para o console. _array = sampleArray
  */
+
+
+/*  //// isso foi o que eu fiz nao deu certo logico
+ var name = "AlbERt EINstEiN";
+
+function nameChanger(oldName) {
+    var finalName = oldName;
+    var firstName;
+    var lastName;
+    // Your code goes here!
+    
+    finalName = name.toLowerCase('AlbERt EINstEiN');
+    //firstName = name.toLocaleUpperCase('AlbERt',0);
+    //lastName = name.toUpperCase('EINstEiN');
+
+    //finalName = firstName + " " + lastName;
+    firstName = finalName.toUpperCase();
+    
+    // Don't delete this line!
+    finalName = firstName;
+    return finalName;
+};
+
+// Did your code work? The line below will tell you!
+console.log(nameChanger(name)); */
+
+/* como ele queria 
+var name = "AlbERt EINstEiN";
+
+function nameChanger(oldName) {
+    var finalName = oldName;
+    var names = oldName.split(" ");
+    names[1] = names[1].toUpperCase();
+    names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+    finalName = names.join(" ");
+    return finalName;
+}
+console.log(nameChanger(name)); */
+
+
+////resposta
+
+/* var names = oldName.split(" ");
+
+
+Aqui, estamos criando um array de nomes analisando o nome original no espaço. 
+Nesse ponto, para nosso exemplo original, names === ["AlbERt", "EINstEiN"]
+
+names[1] = names[1].toUpperCase();
+
+O método string.toUpperCase() faz exatamente o que seu nome descreve. 
+Ele atua em names[1], que é "EINstEiN" no exemplo original. Então aqui estamos 
+reatribuindo o segundo elemento no array names à versão em maiúsculas de "EINSTEIN".
+names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+
+Essa linha cria Albert. names[0].slice(0,1).toUpperCase() começa atuando no 
+primeiro elemento no array names, que é "AlbERt" no exemplo. Em seguida, pegamos 
+apenas a primeira letra usando .slice(0,1). Em seguida, usamos o método .toUpperCase() 
+novamente para assegurar que a primeira letra seja capitalizada. Além disso, 
+observe como encadeamos dois métodos aqui.
+
+A parte seguinte, names[0].slice(1).toLowerCase(), atua de modo semelhante, 
+a não ser porque dessa vez estamos usando .slice(1) para pegar o restante da primeira string, 
+que é "lbERt" no exemplo. Em seguida, simplesmente encadeamos o método .toLowerCase() 
+para assegurar que as outras letras no primeiro nome estejam em minúsculas. Depois que a 
+primeira letra estiver maiúscula e as outras letras do nome estiverem minúsculas, nós as concatenamos junto com o +.
+finalName = names.join(" ");
+
+array.join([chars]) nos permite reunir elementos do array em uma única string. Cada elemento 
+será separado pelo chars opcional. Nesse caso, queremos um espaço entre os dois nomes, por isso 
+fizemos de chars um único espaço, " ". Com isso, reunimos "Albert" e "Einstein" para formar "Albert EINSTEIN"!
+ */
+
+ 
