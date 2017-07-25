@@ -256,18 +256,24 @@ fizemos de chars um único espaço, " ". Com isso, reunimos "Albert" e "Einstein
  */
 
  /////////////////////////////manipulando objetos literais
-/* 
- var skills = ["awesome", "programing", "teaching", "JS"];
+
+
  var bio = {
      "nome" : "Andrei",
      "idade" : 35,
-     "Skills": skills
+     "profissão": "Desenvolvedor",
+     "contato": {
+         "celular":"000-0000",
+         "email": "andreiricardorodrigues@gmail.com",
+         "github": "AndreiRicardo",
+         "local": "registro"
+     },
+    "Menssagem de boas vindas": "laçlalçaçalalalalalla",
+    "Skills": ["awesome", "programing", "teaching", "JS"],
+    "biopic": "images/fry.jpg"
 
- };
+ }
    
-    $('#main').append(
-        "nome: \t", bio.nome,
-        "<br>idade: \t", bio.idade,
-    ); */
+    
 
     
