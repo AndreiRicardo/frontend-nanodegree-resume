@@ -87,7 +87,7 @@ p {
 
 a {
   color: #1199c3;
-  text-decoration: none;
+  text-decoration: block;
   margin-top: 10px;
   display: block;
 }

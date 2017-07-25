@@ -273,7 +273,14 @@ fizemos de chars um único espaço, " ". Com isso, reunimos "Albert" e "Einstein
     "biopic": "images/fry.jpg"
 
  }
+
+
+
+   
+     Object.entries(bio.Skills).forEach(([key, value]) => {
+        
+        return $("#topContacts").append(key, ": \t", value,"<br>");
+    });     
    
     
-
-    
+   
