@@ -56,7 +56,7 @@ var fruits = ['Apple', 'Banana'];
 
 //////Access (index into) an Array item
 
- //var first = fruits[0];
+//var first = fruits[0];
 // Apple
 
 //var last = fruits[fruits.length - 1];
@@ -65,7 +65,7 @@ var fruits = ['Apple', 'Banana'];
 //////Loop over an Array
 
 //fruits.forEach(function(item, index, array) {
-  //console.log(item, "= \t", index);
+//console.log(item, "= \t", index);
 //});
 // Apple 0
 // Banana 1
@@ -100,7 +100,7 @@ var fruits = ['Apple', 'Banana'];
 //////Remove an item by index position
 
 //var removedItem = fruits.splice(pos, 1); // this is how to remove an item
-                                        
+
 // ["Strawberry", "Mango"]
 
 //////Remove items from an index position
@@ -255,32 +255,55 @@ será separado pelo chars opcional. Nesse caso, queremos um espaço entre os doi
 fizemos de chars um único espaço, " ". Com isso, reunimos "Albert" e "Einstein" para formar "Albert EINSTEIN"!
  */
 
- /////////////////////////////manipulando objetos literais
+/////////////////////////////manipulando objetos literais
 
 
- var bio = {
-     "nome" : "Andrei",
-     "idade" : 35,
-     "profissão": "Desenvolvedor",
-     "contato": {
-         "celular":"000-0000",
-         "email": "andreiricardorodrigues@gmail.com",
-         "github": "AndreiRicardo",
-         "local": "registro"
-     },
-    "Menssagem de boas vindas": "laçlalçaçalalalalalla",
+var bio = {
+    "nome": "Andrei",
+    "idade": 35,
+    "profissão": "Desenvolvedor",
+    "contato": {
+        "celular": "000-0000",
+        "email": "andreiricardorodrigues@gmail.com",
+        "github": "AndreiRicardo",
+        "local": "registro"
+    },
+    "msgbv": "laçlalçaçalalalalalla",
     "Skills": ["awesome", "programing", "teaching", "JS"],
     "biopic": "images/fry.jpg"
 
- }
+}
+
+
+/* 
+///// tratando array de objetos
+Object.entries(bio.Skills).forEach(([key, value]) => {
+    return $("#topContacts").append(value, "<br>");
+});
+
+//////// */// trazendo imagem pelo js
+var myImg = new Image(197, 148);
+myImg.src = bio.biopic;
+
+
+$("#topContacts").append(
+
+    myImg,
+    "<br> Nome: \t",
+    bio.nome,
+    "<br> Idade: \t",
+    bio.idade,
+    "<br> Profissão: \t",
+    bio.profissão,
+    "<br>"
+);
+
+Object.entries(bio.contato).forEach(([key, value]) => {
+    return $("#topContacts").append(key, ': \t', value, "<br>");
+});
+Object.entries(bio.Skills).forEach(([key, value]) => {
+    return "Skill: \t", $("#topContacts").append(value, "<br>")
+});
 
 
 
-   
-     Object.entries(bio.Skills).forEach(([key, value]) => {
-        
-        return $("#topContacts").append(key, ": \t", value,"<br>");
-    });     
-   
-    
-   
