@@ -49,7 +49,7 @@ $("#main").append(skills.length); */
 
 //////Create an Array
 
-var fruits = ['Apple', 'Banana'];
+//var fruits = ['Apple', 'Banana'];
 
 //console.log(fruits.length);
 // 2
