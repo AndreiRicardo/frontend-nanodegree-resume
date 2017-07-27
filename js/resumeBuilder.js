@@ -258,7 +258,7 @@ fizemos de chars um único espaço, " ". Com isso, reunimos "Albert" e "Einstein
 /////////////////////////////manipulando objetos literais
 
 
-var bio = {
+/* var bio = {
     "nome": "Andrei",
     "idade": 35,
     "profissão": "Desenvolvedor",
@@ -272,26 +272,26 @@ var bio = {
     "Skills": ["awesome", "programing", "teaching", "JS"],
     "biopic": "images/fry.jpg"
 
-}
+} */
 
 
 
-                            /* ///// tratando array de objetos
-                            Object.entries(bio.Skills).forEach(([key, value]) => {
-                                return $("#topContacts").append(value, "<br>");
-                            }); */
+/* ///// tratando array de objetos
+Object.entries(bio.Skills).forEach(([key, value]) => {
+    return $("#topContacts").append(value, "<br>");
+}); */
 
 //////// */// trazendo imagem pelo js
-var myImg = new Image(197, 148);
-myImg.src = bio.biopic;
-                            /* var div = document.createElement("div");
-                            var divSkill = document.createElement("divSkill");
-                            var divContato = document.createElement("divContato");
-                            document.body.insertBefore("div", "divContato");
-                            //document.body.insertBefore("div", "divSkill"); */
+/* var myImg = new Image(197, 148);
+myImg.src = bio.biopic; */
+/* var div = document.createElement("div");
+var divSkill = document.createElement("divSkill");
+var divContato = document.createElement("divContato");
+document.body.insertBefore("div", "divContato");
+//document.body.insertBefore("div", "divSkill"); */
 
 
-$("#topContacts").append(
+/* $("#topContacts").append(
 
     myImg,
     "<br> Nome: \t",
@@ -304,19 +304,93 @@ $("#topContacts").append(
    
     
 );
+ */
+/*  Object.entries(bio.contato).forEach(([key, value]) => {
+    return $("#divContato").append(key, ': \t', value, "<br>");
+});
+Object.entries(bio.Skills).forEach(([key, value]) => {
+    return "Skill: \t", $("#divSkill").append(value, "<br>")
+});
+*/
 
-                    /*  Object.entries(bio.contato).forEach(([key, value]) => {
-                        return $("#divContato").append(key, ': \t', value, "<br>");
-                    });
-                    Object.entries(bio.Skills).forEach(([key, value]) => {
-                        return "Skill: \t", $("#divSkill").append(value, "<br>")
-                    });
-                    */
-
-                    /* Object.keys(bio.Skills).forEach(function(key) {
+/* Object.keys(bio.Skills).forEach(function(key) {
 
                         console.log(key, bio.Skills[key]);
                         return key, bio.Skills[key] + "<br>";
 
                     }); 
  */
+
+
+
+
+////////////////// exercicio aula 21////////
+////////seçoes do curriculo
+var work = {
+    "jobs" :{
+        "job1": {
+            "title": "desenvolverdor",
+            "employer": "Andrei",
+            "date": "2014",
+            "location": "registro-sp",
+            "description": " Foi uma bosta"
+        },
+        "job2": {
+            "title": "desenvolverdor",
+            "employer": "Ricardo",
+            "date": "2015",
+            "location": "registro-sp",
+            "description": " Foi uma bosta"
+        },
+    }
+    
+}
+
+var projects = {
+    "projects": {
+        "project1":{
+            "title": "save the world",
+            "date": "2016",
+            "description": "cool",
+            "images": ["images\fry.jpg", "images\fry.jpg", "images\fry.jpg"]
+        },
+        "project1":{
+            "title": "final countdown",
+            "date": "1988",
+            "description": "end the world",
+            "images": ["images\fry.jpg", "images\fry.jpg", "images\fry.jpg"]
+        }
+
+    }
+}
+
+var bio = {
+    "name": "Andrei",
+    "role": "developer",
+    "contacts": {
+        "mobile": "00-0000-0000",
+        "email": "email@email.com",
+        "github": "gitSomeone",
+        "twitter": "@andreidev"
+    },
+    "skills" : ["php", "js", "funny", "web api", "java"],
+    "welcomes": "hi i'm a developer, so what!"
+}
+
+var education = {
+    "schools": {
+        "name" : "uniquarter",
+        "major": "unknow",
+        "date" : "2000",
+        "degree" : "dev analist",
+        "location": "registro"
+    },
+    "education" : {
+        "onlinecourse" : {
+            "title" : "webdev",
+            "school" : "pqp",
+            "date" : "2017",
+            "url" : "pqp.com"
+        }
+    }
+}
