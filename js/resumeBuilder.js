@@ -275,15 +275,20 @@ var bio = {
 }
 
 
-/* 
-///// tratando array de objetos
-Object.entries(bio.Skills).forEach(([key, value]) => {
-    return $("#topContacts").append(value, "<br>");
-});
+
+                            /* ///// tratando array de objetos
+                            Object.entries(bio.Skills).forEach(([key, value]) => {
+                                return $("#topContacts").append(value, "<br>");
+                            }); */
 
 //////// */// trazendo imagem pelo js
 var myImg = new Image(197, 148);
 myImg.src = bio.biopic;
+                            /* var div = document.createElement("div");
+                            var divSkill = document.createElement("divSkill");
+                            var divContato = document.createElement("divContato");
+                            document.body.insertBefore("div", "divContato");
+                            //document.body.insertBefore("div", "divSkill"); */
 
 
 $("#topContacts").append(
@@ -296,14 +301,22 @@ $("#topContacts").append(
     "<br> Profissão: \t",
     bio.profissão,
     "<br>"
+   
+    
 );
 
-Object.entries(bio.contato).forEach(([key, value]) => {
-    return $("#topContacts").append(key, ': \t', value, "<br>");
-});
-Object.entries(bio.Skills).forEach(([key, value]) => {
-    return "Skill: \t", $("#topContacts").append(value, "<br>")
-});
+                    /*  Object.entries(bio.contato).forEach(([key, value]) => {
+                        return $("#divContato").append(key, ': \t', value, "<br>");
+                    });
+                    Object.entries(bio.Skills).forEach(([key, value]) => {
+                        return "Skill: \t", $("#divSkill").append(value, "<br>")
+                    });
+                    */
 
+                    /* Object.keys(bio.Skills).forEach(function(key) {
 
+                        console.log(key, bio.Skills[key]);
+                        return key, bio.Skills[key] + "<br>";
 
+                    }); 
+ */
