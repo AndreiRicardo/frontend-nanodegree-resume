@@ -336,7 +336,7 @@ var work = {
             "description": " Foi uma bosta"
         },
         "job2": {
-            "title": "desenvolverdor",
+            "title": "developer",
             "employer": "Ricardo",
             "date": "2015",
             "location": "registro-sp",
@@ -396,3 +396,36 @@ var education = {
 }
 
 
+if (bio.skills.length > 0) {
+    $("#header").append(HTMLskillsStart);
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+    $("#skills").append(formattedSkill);
+}
+
+
+///////// condicional
+
+
+var andrei = [];
+
+andrei.jobs = "course dev";
+ var makeCourse = function() {
+     console.log("Made a course");
+ }
+    var courses = 0;
+    while (andrei.jobs === "developer" ) {
+        makeCourse();
+        courses = courses + 1;
+        if (courses === 10) {
+            andrei.jobs = "aprendendo especialidade";            
+        }
+        
+    }
+    console.log(andrei.jobs);
