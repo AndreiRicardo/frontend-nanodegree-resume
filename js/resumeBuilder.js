@@ -327,23 +327,22 @@ Object.entries(bio.Skills).forEach(([key, value]) => {
 ////////////////// exercicio aula 21////////
 ////////seçoes do curriculo
 
-var projects = {
-    "projects": {
-        "project1":{
+var projects = [
+        {
             "title": "save the world",
             "date": "2016",
             "description": "cool",
             "images": ["images\fry.jpg", "images\fry.jpg", "images\fry.jpg"]
         },
-        "project1":{
+        {
             "title": "final countdown",
             "date": "1988",
             "description": "end the world",
             "images": ["images\fry.jpg", "images\fry.jpg", "images\fry.jpg"]
         }
 
-    }
-}
+    
+]
 
 var bio = {
     "name": "Andrei",
@@ -383,6 +382,12 @@ var education = {
 }
 var work = {
     "jobs":[
+        {
+            //aqui vai um objeto
+        },
+        {
+            //aqui vai outro
+        }
 
     ]
 }
