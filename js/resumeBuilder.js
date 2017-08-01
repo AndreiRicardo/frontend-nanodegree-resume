@@ -326,25 +326,6 @@ Object.entries(bio.Skills).forEach(([key, value]) => {
 
 ////////////////// exercicio aula 21////////
 ////////seçoes do curriculo
-var work = {
-    "jobs" :{
-        "job1": {
-            "title": "desenvolverdor",
-            "employer": "Andrei",
-            "date": "2014",
-            "location": "registro-sp",
-            "description": " Foi uma bosta"
-        },
-        "job2": {
-            "title": "developer",
-            "employer": "Ricardo",
-            "date": "2015",
-            "location": "registro-sp",
-            "description": " Foi uma bosta"
-        },
-    }
-    
-}
 
 var projects = {
     "projects": {
@@ -367,33 +348,45 @@ var projects = {
 var bio = {
     "name": "Andrei",
     "role": "developer",
-    "contacts": {
-        "mobile": "00-0000-0000",
-        "email": "email@email.com",
-        "github": "gitSomeone",
-        "twitter": "@andreidev"
-    },
+    "contacts": {"mobile": "00-0000-0000", "email": "email@email.com", "github": "gitSomeone","twitter": "@andreidev"},
     "skills" : ["php", "js", "funny", "web api", "java"],
     "welcomes": "hi i'm a developer, so what!"
 }
 
 var education = {
-    "schools": {
-        "name" : "uniquarter",
-        "major": "unknow",
-        "date" : "2000",
-        "degree" : "dev analist",
-        "location": "registro"
-    },
-    "education" : {
-        "onlinecourse" : {
-            "title" : "webdev",
-            "school" : "pqp",
-            "date" : "2017",
-            "url" : "pqp.com"
+    "schools": [
+        {
+            "name": "nova southeastern unvisercity",
+            "city": "fort lauderdale, FL",
+            "degree": "master",
+            "majors": [CS],
+            "date": 2013,
+            "url": "http://exemplo.com"
+        },
+         {
+            "name": "unisep",
+            "city": "registro, SPL",
+            "degree": "degree",
+            "majors": [CS],
+            "date": 2017,
+            "url": "http://exemplo.com"
         }
-    }
+    ],
+    "onlineCourses": [
+        {
+            "title": "JAvaScript crash coureses",
+            "school": "Udacity",
+            "date": 2017,
+            "url": "http://www.udacity.com/courses/ude84"
+        }
+    ]
 }
+var work = {
+    "jobs":[
+
+    ]
+}
+
 
 
 if (bio.skills.length > 0) {
@@ -413,19 +406,3 @@ if (bio.skills.length > 0) {
 ///////// condicional
 
 
-var andrei = [];
-
-andrei.jobs = "course dev";
- var makeCourse = function() {
-     console.log("Made a course");
- }
-    var courses = 0;
-    while (andrei.jobs === "developer" ) {
-        makeCourse();
-        courses = courses + 1;
-        if (courses === 10) {
-            andrei.jobs = "aprendendo especialidade";            
-        }
-        
-    }
-    console.log(andrei.jobs);
