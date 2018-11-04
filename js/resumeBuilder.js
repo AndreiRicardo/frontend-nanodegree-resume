@@ -409,5 +409,6 @@ if (bio.skills.length > 0) {
 
 
 ///////// condicional
+// fiz uma nota aqui
 
 
