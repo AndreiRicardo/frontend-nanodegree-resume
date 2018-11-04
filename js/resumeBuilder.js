@@ -413,5 +413,8 @@ if (bio.skills.length > 0) {
 
 // outra menssagem
 
+// outra
+
+
 
 
