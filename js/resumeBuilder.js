@@ -415,6 +415,8 @@ if (bio.skills.length > 0) {
 
 // outra
 
+// anndrei
+
 
 
 
